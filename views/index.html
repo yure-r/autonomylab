@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--          <link id="favicon" rel="icon" class="js-site-favicon" type="image/svg+xml" href={{data.favicon}}> -->
+<!--   uncomment the above line and comment out the below lines and javascript up to "onUdpdate()" to enable favicon choice wth time of day   -->
+<link rel="icon" href="https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Flight-theme-favicon-59.svg?v=1627939381239" id="light-scheme-icon">
+<link rel="icon" href="https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fdark-theme-favicon-64.svg?v=1627939381239" id="dark-scheme-icon">
+<!--     <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png"> -->
+<!--     <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000"> -->
+    
+    <script>
+      
+const lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+const darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+function onUpdate() {
+  if (matcher.matches) {
+    lightSchemeIcon.remove();
+    document.head.append(darkSchemeIcon);
+  } else {
+    document.head.append(lightSchemeIcon);
+    darkSchemeIcon.remove();
+  }
+}
+      
+let matcher = window.matchMedia('(prefers-color-scheme: dark)');
+matcher.addListener(onUpdate);
+onUpdate();
+      
+      
+      
+    window.time1 = Date.now();
+    window.data = "{{data.data}}"
+    window.data = window.data.replace(/&quot;/g,'"')
+    console.log(window.data)
+    window.eval = JSON.parse(window.data)
+    console.log(window.eval)
+      
+    let root = document.documentElement;
+    root.style.setProperty('--accent-color', window.eval.accentColor);
+    root.style.setProperty('--background-color', window.eval.backgroundColor)
+      console.log(window.eval.accentColor)
+      
+    </script>
+    <script type="module" src="./script.js"></script>
+    <script src="./anime.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--     <link rel="icon" href="y" /> -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <title>Autonomy Lab | The Cooper Union</title>
+  </head>
+  <body style="background-color: #808080;">
+<div id="richardyurewitchsvg">
+  
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 613.36 197.02">
+  <g>
+    <path d="M181.31,70.17,177.26,83l-5.8,8.51-7.29,4.85H153.24l-6.48-4.72-7.2-8.91-2.51-12.41v-3.5h10.39v-3H137.05V31h-3.38V63.81h-22V0h-2.57L71.44,63.81H55.81v3H69.67L40.36,116.54,43.1,118,73.25,66.81h35.4l-.22,32.78h3.19V66.81h22v3l2.78,13.9.27.67,7.62,9.45.4.4,6.75,5,1.21.4h12l1.08-.4,7.42-5,.54-.54,6.48-9.44,1.08-3V99.59h3.38V31h-3.38ZM109,6l-.38,57.78H75Z"/>
+    <polygon points="220.4 99.59 223.77 99.59 223.77 34.41 246.98 34.41 246.98 31.04 223.64 31.04 223.64 0 220.26 0 220.26 31.04 208.93 31.04 208.93 34.41 220.4 34.41 220.4 99.59"/>
+    <path d="M305.68,46.56l-.27-.68L298.93,37l-.4-.41-6.88-5.13-1.22-.4H276.26l-1.21.4-7.42,5.13-.41.41-6.48,8.9-.27.54-4.31,13.09V70.85l4.31,13,.27.41,6.48,9.44.54.54,7.42,5,1.08.4h14.17l1.22-.4,6.88-5,.4-.54,6.48-9.44.27-.54,3.78-12.15.14-.54V59.24l-.14-.54ZM306.22,71l-3.51,11.34v.13l-6.34,9.18-6.48,4.72H276.53l-6.88-4.72L263.71,83l-4-12.41V59.65l4-12.28L269.92,39l6.75-4.72H290l6.34,4.85,6.34,8.64.14.14,3.37,11.2Z"/>
+    <polygon points="374.64 42.64 374.24 42.1 368.57 35.63 368.03 35.22 360.74 31.31 359.8 31.04 348.6 31.04 347.65 31.31 339.82 35.22 339.28 35.63 333.48 41.83 333.48 31.04 330.11 31.04 330.11 46.7 318.5 63.43 321.61 65.18 330.11 52.91 330.11 55.6 330.11 56.27 330.11 99.59 333.48 99.59 333.48 48.04 336.05 44.4 341.71 37.92 348.87 34.28 359.52 34.28 366.14 37.92 371.4 43.86 374.5 51.01 374.5 99.59 377.88 99.59 377.88 50.88 377.74 50.06 374.64 42.64"/>
+    <path d="M442.65,46.56l-.27-.68L435.9,37l-.4-.41-6.88-5.13L427.4,31H413.23l-1.21.4-7.42,5.13-.41.41-6.48,8.9-.27.54-4.31,13.09V70.85l4.31,13,.27.41,6.48,9.44.54.54,7.42,5,1.08.4H427.4l1.22-.4,6.88-5,.4-.54,6.48-9.44.27-.54,3.78-12.15.14-.54V59.24l-.14-.54ZM443.19,71l-3.51,11.34v.13l-6.34,9.18-6.48,4.72H413.5l-6.88-4.72L400.68,83l-4.05-12.41V59.65l4.05-12.28L406.89,39l6.75-4.72H427l6.34,4.85,6.34,8.64.14.14,3.37,11.2Z"/>
+    <polygon points="530.5 34.28 535.23 37.52 540.08 43.86 542.51 51.69 542.51 99.59 545.89 99.59 545.89 51.95 543.05 42.64 542.78 41.97 537.92 35.49 532.26 31.44 531.04 31.04 518.22 31.04 517.01 31.44 511.74 35.09 507.69 40.62 503.65 35.36 503.24 34.95 497.84 31.44 496.63 31.04 482.06 31.04 480.84 31.44 475.58 34.95 475.17 35.36 473.28 38.05 473.28 31.04 469.91 31.04 469.91 42.78 457.09 63.7 460.06 65.45 469.91 49.39 469.91 99.59 473.28 99.59 473.28 43.72 477.2 38.33 477.47 37.92 482.46 34.28 496.23 34.28 500.81 37.24 505.67 43.45 493.39 63.7 496.23 65.45 505.94 49.66 505.94 99.59 509.31 99.59 509.31 43.86 513.77 37.65 518.76 34.28 530.5 34.28"/>
+    <path d="M181.31,135.36l-.81-2.43-.27-.54-6.48-9-.4-.4-7.42-5-1.22-.4h-14.3l-1.22.4-6.88,5-.4.4-6.62,9-.27.68-3.77,12.14-.14.54v11.88l.14.54,3.23,11.47,1.76,3.51,5.67,7.15.4.4,6.88,5,1.22.4h14.3l1.08-.4,7.42-5,.54-.4,6.48-8.37.27-.67.81-2.57V186.1h3.38V117.56h-3.38Zm0,22.27L177.53,170l-6.2,8.1-6.89,4.72H150.81l-6.47-4.72-6.08-7.83-1.35-3.91-2.43-8.77V145.75L138,134.28l6.48-8.9,6.34-4.73h13.5l6.74,4.86,6.35,8.64,3.91,11.74Z"/>
+    <path d="M250.79,132.57l-.27-.54L244,123.67l-.41-.41-7.42-5.13-1.21-.4H220.69l-1.21.4-6.88,5.27-.41.4L205.58,132l-.27.68-.54,1.75.45-63.31h-3.37l-.45,115.13h3.37V169.14l.54,1.89.27.68,6.61,9,.41.4,6.88,4.73,1.21.4H235l1.08-.27,7.42-4.72.54-.68,6.48-9,.27-.54,4-13.09.14-.54v-12l-.14-.67Zm.94,25.51L248,170.22l-6.47,8.91-6.89,4.32H221.23L214.89,179l-6.48-8.64-3.51-12.42V145.8l3.51-11.74L215,126l6.34-4.59h13.22l6.75,4.59,6.61,8.37,3.78,11.6Z"/>
+    <polygon points="89.72 70 86.28 70 18.64 184.39 0 184.39 0 187.39 16.87 187.39 12.13 195.4 15.1 197.02 20.76 187.39 111.63 187.39 111.63 184.39 22.52 184.39 89.72 70"/>
+    <polygon points="613.36 33.2 610.25 31.17 584.38 75.59 561.13 31.04 557.81 32.39 581.95 79.32 569.53 100.91 517.41 189.43 520.38 191.05 557.04 128.46 557.04 128.46 613.36 33.2"/>
+  </g>
+</svg>
+  
+  
+  <svg version="1.1" id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewbox="0 0 2267.9 1321.17" style="enable-background:new 0 0 2267.9 1321.17;" xml:space="preserve" preserveaspectratio="xMidYMid slice">
+<style type="text/css">
+	.st0{fill:none;stroke:#808080;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:#808080;stroke:#808080;stroke-miterlimit:10;}
+	.st2{fill:#808080;}
+	.st3{fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:#808080;stroke:#808080;stroke-width:8;stroke-miterlimit:10;}
+	.st5{fill:#808080;}
+	.st6{fill:none;stroke:#808080;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#808080;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;}
+	.st10{fill:none;stroke:#808080;stroke-width:0.1;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#808080;stroke-width:3;stroke-miterlimit:10;}
+	.st12{fill:#808080;stroke:#808080;stroke-width:3;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#808080;stroke-width:0.1;stroke-miterlimit:10;}
+	.st14{clip-path:url(#SVGID_2_);}
+	.st15{clip-path:url(#SVGID_2_);fill:none;stroke:#808080;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<path d="M1008.58,632.25l-4.05,12.82l-5.8,8.5l-7.29,4.86h-10.93l-6.48-4.72l-7.21-8.91l-2.51-12.42v-3.49h10.39v-3h-10.39v-32.78
+		h-3.37v32.78h-22.05l0-63.81h-1.08h-1.48l-37.62,63.81h-15.63v3h13.86l-29.31,49.72l2.74,1.49l30.15-51.21h35.39l-0.21,32.78h3.19
+		l0-32.78h22.05v2.95l2.78,13.9l0.27,0.67l7.61,9.45l0.4,0.4l6.75,4.99l1.21,0.41h12.01l1.08-0.41l7.42-4.99l0.54-0.54l6.48-9.45
+		l1.08-2.97v18.35h3.37v-68.55h-3.37V632.25z M936.31,568.1l-0.37,57.79h-33.65L936.31,568.1z"/>
+	<polygon points="1047.67,661.67 1051.04,661.67 1051.04,596.49 1074.25,596.49 1074.25,593.11 1050.9,593.11 1050.9,562.07 
+		1047.53,562.07 1047.53,593.11 1036.19,593.11 1036.19,596.49 1047.67,596.49 	"/>
+	<path d="M1132.95,608.63l-0.27-0.67l-6.48-8.91l-0.4-0.41l-6.88-5.13l-1.21-0.4h-14.17l-1.21,0.4l-7.42,5.13l-0.41,0.41l-6.48,8.91
+		l-0.27,0.54l-4.32,13.09v11.34l4.32,12.96l0.27,0.41l6.48,9.45l0.54,0.54l7.42,4.99l1.08,0.41h14.17l1.21-0.41l6.88-4.99l0.4-0.54
+		l6.48-9.45l0.27-0.54l3.78-12.15l0.13-0.54v-11.74l-0.13-0.54L1132.95,608.63z M1133.49,633.06l-3.51,11.34v0.13l-6.34,9.18
+		l-6.48,4.72h-13.36l-6.88-4.72l-5.94-8.64l-4.05-12.42v-10.93l4.05-12.28l6.21-8.37l6.75-4.72h13.36l6.34,4.86l6.34,8.64l0.13,0.13
+		l3.37,11.2V633.06z"/>
+	<polygon points="1201.91,604.72 1201.5,604.18 1195.84,597.7 1195.3,597.3 1188.01,593.38 1187.06,593.11 1175.86,593.11 
+		1174.92,593.38 1167.09,597.3 1166.55,597.7 1160.75,603.91 1160.75,593.11 1157.38,593.11 1157.38,608.77 1145.77,625.5 
+		1148.87,627.25 1157.38,614.98 1157.38,617.67 1157.38,618.35 1157.38,661.67 1160.75,661.67 1160.75,610.12 1163.31,606.47 
+		1168.98,599.99 1176.13,596.35 1186.79,596.35 1193.41,599.99 1198.67,605.93 1201.77,613.08 1201.77,661.67 1205.15,661.67 
+		1205.15,612.95 1205.01,612.14 	"/>
+	<path d="M1269.92,608.63l-0.27-0.67l-6.48-8.91l-0.4-0.41l-6.88-5.13l-1.21-0.4h-14.17l-1.21,0.4l-7.42,5.13l-0.41,0.41l-6.48,8.91
+		l-0.27,0.54l-4.32,13.09v11.34l4.32,12.96l0.27,0.41l6.48,9.45l0.54,0.54l7.42,4.99l1.08,0.41h14.17l1.21-0.41l6.88-4.99l0.4-0.54
+		l6.48-9.45l0.27-0.54l3.78-12.15l0.13-0.54v-11.74l-0.13-0.54L1269.92,608.63z M1270.46,633.06l-3.51,11.34v0.13l-6.34,9.18
+		l-6.48,4.72h-13.36l-6.88-4.72l-5.94-8.64l-4.05-12.42v-10.93l4.05-12.28l6.21-8.37l6.75-4.72h13.36l6.34,4.86l6.34,8.64l0.13,0.13
+		l3.37,11.2V633.06z"/>
+	<polygon points="1357.77,596.35 1362.49,599.59 1367.35,605.93 1369.78,613.76 1369.78,661.67 1373.15,661.67 1373.15,614.03 
+		1370.32,604.72 1370.05,604.04 1365.19,597.57 1359.52,593.52 1358.31,593.11 1345.49,593.11 1344.28,593.52 1339.01,597.16 
+		1334.96,602.69 1330.92,597.43 1330.51,597.03 1325.11,593.52 1323.9,593.11 1309.32,593.11 1308.11,593.52 1302.85,597.03 
+		1302.44,597.43 1300.55,600.13 1300.55,593.11 1297.18,593.11 1297.18,604.85 1284.36,625.77 1287.33,627.52 1297.18,611.46 
+		1297.18,661.67 1300.55,661.67 1300.55,605.8 1304.47,600.4 1304.74,599.99 1309.73,596.35 1323.49,596.35 1328.08,599.32 
+		1332.94,605.53 1320.66,625.77 1323.49,627.52 1333.21,611.74 1333.21,661.67 1336.58,661.67 1336.58,605.93 1341.04,599.72 
+		1346.03,596.35 	"/>
+	<path d="M1008.58,697.44l-0.81-2.43l-0.27-0.54l-6.48-9.04l-0.4-0.41l-7.42-4.99l-1.21-0.4h-14.3l-1.21,0.4l-6.88,4.99l-0.41,0.41
+		l-6.61,9.04l-0.27,0.67l-3.78,12.15l-0.13,0.54v11.88l0.13,0.54l3.24,11.47l1.75,3.51l5.67,7.15l0.41,0.4l6.88,4.99l1.21,0.41h14.3
+		l1.08-0.41l7.42-4.99l0.54-0.4l6.48-8.37l0.27-0.67l0.81-2.56v17.41h3.37v-68.55h-3.37V697.44z M1008.58,719.7l-3.78,12.42
+		l-6.21,8.1l-6.88,4.72h-13.63l-6.48-4.72l-6.07-7.83l-1.35-3.91l-2.43-8.77v-11.88l3.51-11.47l6.48-8.91l6.34-4.72h13.5l6.75,4.86
+		l6.34,8.64l3.91,11.74V719.7z"/>
+	<path d="M1078.05,694.65l-0.27-0.54l-6.48-8.37l-0.41-0.41l-7.42-5.13l-1.21-0.4h-14.3l-1.21,0.4l-6.88,5.26l-0.4,0.4l-6.61,8.23
+		l-0.27,0.67l-0.54,1.75l0.46-63.32h-3.37l-0.46,115.14h3.37v-17.14l0.54,1.89l0.27,0.67l6.61,9.04l0.4,0.41l6.88,4.72l1.21,0.41
+		h14.3l1.08-0.27l7.42-4.72l0.54-0.67l6.48-9.04l0.27-0.54l4.05-13.09l0.13-0.54v-12.01l-0.13-0.67L1078.05,694.65z M1079,720.15
+		l-3.78,12.15l-6.48,8.91l-6.88,4.32h-13.36l-6.34-4.45l-6.48-8.64l-3.51-12.42v-12.15l3.51-11.74l6.61-8.1l6.34-4.59h13.22
+		l6.75,4.59l6.61,8.37l3.78,11.61V720.15z"/>
+	<polygon points="916.99,632.07 913.54,632.07 845.91,746.47 827.27,746.47 827.27,749.47 844.14,749.47 839.4,757.47 
+		842.37,759.09 848.03,749.47 938.9,749.47 938.9,746.47 849.79,746.47 	"/>
+	<polygon points="1440.63,595.27 1437.52,593.25 1411.64,637.67 1388.4,593.11 1385.08,594.46 1409.22,641.4 1396.8,662.99 
+		1344.68,751.5 1347.65,753.12 1384.31,690.54 1384.31,690.54 	"/>
+</g>
+<line class="st11" x1="1438.81" y1="594.84" x2="1789.82" y2="-2.84"/>
+<line class="st11" x1="1358.21" y1="732.08" x2="1010.34" y2="1320.91"/>
+<line class="st11" x1="885.13" y1="651.19" x2="498.07" y2="1310.25"/>
+<line class="st11" x1="904.31" y1="651.19" x2="505.92" y2="1329.54"/>
+<line class="st11" x1="900.3" y1="658.01" x2="1286.74" y2="0"/>
+<line class="st11" x1="1293.07" y1="614.87" x2="830.98" y2="1322.13"/>
+<line class="st11" x1="1329.72" y1="614.87" x2="866.49" y2="1323.48"/>
+<line class="st11" x1="1153.23" y1="617.38" x2="673.77" y2="1322.13"/>
+<line class="st11" x1="1410.38" y1="639.19" x2="1064.59" y2="0"/>
+<line class="st11" x1="897.9" y1="627.39" x2="0" y2="627.39"/>
+<line class="st11" x1="1047.9" y1="594.84" x2="0" y2="594.84"/>
+<line class="st11" x1="857.9" y1="748.36" x2="0" y2="748.36"/>
+<line class="st11" x1="969.71" y1="627.38" x2="2269.61" y2="627.38"/>
+<line class="st11" x1="898.06" y1="748.36" x2="2267.95" y2="748.36"/>
+<line class="st11" x1="1068.06" y1="594.84" x2="2267.95" y2="594.84"/>
+<line class="st11" x1="1298.8" y1="661.67" x2="1298.8" y2="1321.17"/>
+<line class="st11" x1="1334.67" y1="661.67" x2="1335.48" y2="1321.17"/>
+<line class="st11" x1="1371.41" y1="661.67" x2="1371.41" y2="1321.17"/>
+<line class="st11" x1="1158.97" y1="661.67" x2="1158.97" y2="1321.17"/>
+<line class="st11" x1="1203.68" y1="661.67" x2="1203.68" y2="1321.17"/>
+<line class="st11" x1="1030.45" y1="661.41" x2="1030.45" y2="1320.91"/>
+<line class="st11" x1="1049.05" y1="582.7" x2="1049.05" y2="-0.8"/>
+<line class="st11" x1="1298.8" y1="611.46" x2="1298.8" y2="-0.8"/>
+<line class="st11" x1="1158.97" y1="611.46" x2="1158.97" y2="-0.8"/>
+<line class="st11" x1="1010.34" y1="611.46" x2="1010.34" y2="-0.8"/>
+<line class="st11" x1="962.75" y1="611.46" x2="962.75" y2="-0.8"/>
+<line class="st11" x1="1030.45" y1="658.43" x2="1030.45" y2="-2.84"/>
+<line class="st11" x1="937.31" y1="661.41" x2="937.31" y2="1320.91"/>
+<line class="st11" x1="1049.05" y1="661.67" x2="1049.05" y2="1321.17"/>
+<line class="st11" x1="1010.34" y1="661.41" x2="1010.34" y2="1320.91"/>
+</svg> 
+   </div>
+
+      <div class="bodycopyandbuttonsanddrawing">
+        
+      
+          <div class="bodycopymain">
+            <b>Autonomy Lab</b> is located at <a href="https://cooper.edu/" target="_blank">The Cooper Union</a> in New York City.<br><br>
+
+        <b>Interdisciplinarity</b> is at the core of Autonomy Lab. The lab combines efforts from the university’s three schools: <a href="https://cooper.edu/architecture" target="_blank">Architecture</a>, <a href="https://cooper.edu/art" target="_blank">Art</a>, and <a href="https://cooper.edu/engineering" target="_blank">Engineering.</a> The collective focus of the lab is on solving problems involving the autonomy of cities and communities by searching for design breakthroughs in related fields that concern an autonomous and sustainable structure.<br><br>
+
+        <b>Autonomy</b> in this case involves autonomous systems of varying scales: the site of the smart city, the site of the body, and methods of sustainable agriculture. The lab is not limited to these three examples, efforts include exploring other autonomous and connected systems through various digital, physical, and natural methods of communication and study.
+    </div>
+              
+        <script>
+        function classCheck(element){
+          if (element.classList.contains("activeInfoButton2")){
+             element.classList.remove("activeInfoButton2")
+            
+          if(element.children[0] && element.children[0].classList.contains("activeInfoButton2")){
+            element.children[0].classList.remove("activeInfoButton2")
+          }
+          }
+
+        }
+        function classFix(event){
+          document.querySelectorAll(".dynamicTextButton").forEach(element => classCheck(element))          
+          if(event.target.tagName == "A"){
+          event.preventDefault();
+          document.getElementById("scroll-target").scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+          });
+          
+            setTimeout(function(){ if(document.getElementById('dynamictext').scrollTop != 0){document.getElementById('dynamictext').scrollTop = 0} }, 1);
+          event.target.parentElement.classList.add("activeInfoButton2")
+          event.target.classList.add("activeInfoButton2")
+          } else {
+          document.getElementById("scroll-target").scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+          });
+            setTimeout(function(){ if(document.getElementById('dynamictext').scrollTop != 0){document.getElementById('dynamictext').scrollTop = 0} }, 1);
+            event.target.classList.add("activeInfoButton2")
+            if(event.target.children[0]){
+              event.target.children[0].classList.add("activeInfoButton2")
+            }
+          }
+        }
+        </script>
+        
+        <div id="canvascontainer">
+                <div class="infobuttons">
+
+                  <script>
+                  function yesulFunction(event){
+                    event.preventDefault();
+                    
+                    if (document.getElementById("YeseulTalk").style.maxHeight==="0px"){
+                    // document.getElementById("YeseulTalk").style.display="block"
+                    // document.getElementById("YeseulTalk").style.height="fit-content"
+                    document.getElementById("YeseulTalk").style.transition = "max-height 1s ease-in"
+                    document.getElementById("YeseulTalk").style.maxHeight="3300px"
+                    document.getElementById("YesulButton").innerText = "Contract Description"
+                    
+                    } else {
+                      // document.getElementById("YeseulTalk").style.height="0px"
+                      document.getElementById("YeseulTalk").style.transition = "max-height 0.4s cubic-bezier(0, 1.04, 0, 0.99) 0s"
+                       
+                      document.getElementById("YeseulTalk").style.maxHeight="0px"
+                      document.getElementById("YesulButton").innerText = "Expand Description"
+                    }
+                  }
+                  </script>
+                  
+               <script>
+        const newsText = `
+        <b>Yeseul Song</b> Lecture:<br>
+        <b>Creating New Sensory Languages with Invisible Sculptures</b><br><br>
+        Wednesday, October 6th, 6PM, Rose Auditorium, The Cooper Union<br><br>
+        Can you trust something that you can’t see? When an object does not have a form but is perceivable, does that object “exist”? <br><br>
+Yeseul Song is a new media artist who creates Invisible Sculptures, a series of sculptures that can be “seen” by senses other than vision. These sculptures are made of invisible materials such as sound, air, heat, smell and thought, suggesting more inclusive and creative views of the world.<br><br>
+
+<div id="YeseulTalk" style="max-height:0px; transition: max-height 1s ease-in; overflow:hidden;">
+
+During this talk, Yeseul will share her experiences creating Invisible Sculptures and other interactive art projects.<br><br>
+Yeseul Song is a Korean-born, New York-based artist who examines the fluid nature of human perception and its relationship with our society, culture, and the environment by creating artwork that challenges how we normally perceive and interact with the world. Her work combines digital technology and analog materials to create interactive experiences that invite viewers to be part of the work through bodily movements and creative expressions. <br><br>
+
+Her solo exhibition about the Invisible Sculptures series is currently on-view at the Clayarch Museum in South Korea. Yeseul has received Artist Fellowships and Residencies from the Museum of Arts and Design, the Future Imagination Fund, the Engelberg Center on Innovation Law & Policy, and Mana Contemporary. She is the winner of iF Design Award, Communication Arts Interactive Annual, and iF Design Award. She teaches at NYU's Tisch School of the Arts' Interactive Telecommunications Program (ITP).<br><br>
+</div>
+<a id="YesulButton" href="" onclick="yesulFunction(event)">Expand Description</a><br><br>
+                  
+website: <a href="https://yeseul.com/" target="_blank">https://yeseul.com/</a> <br>
+instagram: <a href="https://www.instagram.com/yeseulsong_/?hl=en" target="_blank">@yeseulsong_</a>
+
+
+        
+        <br><br><hr><br>
+        <b>Autonomy Lab Faculty News:</b><br>
+        <br><b>Dr. Mili Shah</b> celebrated as C.V. Starr Distinguished Professor of Engineering<br> <a href="https://cooper.edu/engineering/news/2021-distinguished-professor-bioengineering-and-cv-starr-distinguished-professor" target="_blank">Read more</a>
+        <br><br><b>Dr. Neveen Shlayan</b> and <b>Dirk Luchtenburg</b> promoted to tenure professors!<br><br><hr><br>
+        <b>Student internships this Summer:</b><ul><li><b>Alexa Jakob:</b> Nvidia</li><li><b>Daniel Mezihborsky:</b> Tesla</li><li><b>Amaan Rahman + Luccia Rhode:</b> Summer Undergraduate Research Fellowship at National Institute of Standards and Technology</li></ul>
+        <br>
+        <hr>
+        <br>
+        <b>Cooper Union Grant Program grants awarded to branches of Autonomy Lab:</b><br><br><b>Body Tracking:</b> \"Developing a Multidisciplinary Collaboration between Art and Engineering via Movement and BodyTracking\"
+        <br>Faculty/Staff: Mili Shah, Jennifer Weiser, Joao Enxuto<br>
+        Students: Diego Herrera, Amaan Rahman, Pia Roels, Aaron Schmitz, Hannah Wu<br>
+        <b>Amount: $9,981</b><br>
+        <br>
+        <b>Body Tracking:</b> \"Domestic Robotics Research Project\"<br>
+        Faculty/Staff: Mili Shah, Lydia Kallipoliti<br>
+        Students: Alexa Jakob, Hannah Rajarao, Lucia Rhode, Denise Cholula, Leslie-Fairuz Abad-Neagu, Michael Sluchevksy<br>
+        <b>Amount: $10,000</b>
+        <br>
+        <br>
+        <b>Smart Cities:</b> \"Within the Context of Smart Cities: The Autonomy Lab’s Smart Mobility Testbed-Phase II\"<br>
+        Faculty/Staff: Neveen Shlayan, Diego Malquori, Mike Giglia, Joao Enxuto<br>Students: Jon Lu, Daniel Mezhiborsky<br>Autonomy Lab Members (more than 40 students, faculty and staff)<br>
+        <b>$10,000</b><br>
+        <br>
+        <b>BioArt Lab:</b> \"Alternative Knowledge: Sustainable Materials in the Arts and Beyond (BioArt Lab)\"
+        <br>Faculty/Staff: Neveen Shlayan<br>
+        Students: Dalila Oliver, Maya Benedetti, Brandon Bunt<br>
+        <b>Amount: $3,500</b><br>
+        <br><a href=\"https://cooper.edu/academics/research-fellowships/cooper-union-grant-program/2021\">Full List of 2021 Cooper Union Grant Program Grants</a><br>
+        <br>
+        <hr>
+        <br>
+        <b>Other scholarships and awards for Autonomy Lab Members: </b><br>
+        <br>(possibly) <b>Philip Yecko’s</b> NSF grant for <b>a master’s student</b> (if it’s confirmed they get it) on origami:<br>
+        <br><b>Alexa Jakob</b> earned a Goldwater Scholarship:
+        <a href="https://cooper.edu/engineering/news/junior-alexa-jakob-ee22-named-goldwater-scholar" target="_blank">Read More</a>
+        `
+        </script>
+        <button class="dynamicTextButton" id="displaywindow2" onclick="document.getElementById('dynamictext').innerHTML = newsText; classFix(event);">
+          News
+        </button>    
+        <br class="infobuttonspace">
+        <br class="infobuttonspace">
+        <script>
+        const outreachText = `<b>Autonomy Lab is actively looking to work with groups in NYC. Whether educational or industrial—feel free to <a href=\"mailto:Neveen.Shlayan@cooper.edu\">contact us</a> if you are interested in working with us.</b>
+        <br><br>
+        <hr>
+        <br>
+        <b>CUSAP Designs Hydrokit:</b><br>An introduction to urban food production using hydroponics, which was used to teach Summer STEM for high school students and first year undergraduate students. 
+        <br>
+        <br>
+        <img class=\"newsimage\" src=\"https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Ffb1c18f8-dc1a-41de-b201-1c74f4186315.image.png?v=1626638720929\">
+        <br>
+        <br>There’s an unboxing video here: <br>
+        <a href=\"https://drive.google.com/file/d/1koabHsSIMe2-BrKAoospyG7YhUCJz5VA/view?usp=sharing\" target=\"_blank\">Watch the Unboxing Video Here</a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <b>CUSAP section from Brandon in Santa Cruz:</b><br>\"I've been/Brandon Bunt from CUSAP has been working at the Barbara Ford Center for Peace in Santa Cruz del Quiche, Guatemala to better understand the reality of local subsistence farming, and improve local quality of life by examining waste management practices and studying problems farmers face with their crops. Challenges in the region include reliance on chemical fertilizers and pesticides, lack of waste disposal facilities, low soil health, and deforestation. Biochar was identified as a potential solution that would simultaneously offer solutions for reducing organic waste, improving forest management, providing organic soil amendment and thus increasing soil health, and diminishing the need for chemical fertilizer. By installing a small-scale 30-gallon capacity biochar reactor at the center, the reactor will produce enough biochar for use on the center's crops and produce excess for a profit after 6 months. The center can then sell biochar to local farmers, as well as educate them on how to create their own biochar set-ups. This campaign to adopt biochar will hopefully increase the autonomy of local communities by lowering reliance on expensive garbage disposal services and chemical fertilizers.\"<br>
+        <br>
+        <img class=\"newsimage\" src=\"https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fa8cb0de5-8c6a-4565-860b-f58b89296a4a.image.png?v=1626637608904\"><br>`
+        </script>
+                <button class="dynamicTextButton" id="displaywindow3" onclick="document.getElementById('dynamictext').innerHTML = outreachText; classFix(event);">
+                  Outreach
+        </button>
+                     <br class="infobuttonspace">
+        <br class="infobuttonspace">
+
+                          <script>
+          let moreInfoText
+          function definemoreInfoText(){
+            moreInfoText = `The Autonomy Lab is a new interdisciplinary branch of the Cooper Union School of Engineering.  
+            With a focus on positive outcomes generated from work undertaken by many individuals with varying academic backgrounds, the lab hopes to achieve a more connected Cooper Union, through student and faculty engagement with its ongoing projects.
+            <br>
+            <br>
+            <hr>
+            <br> The color scheme of this website changes based on when and where you are.<br>
+            <br>Currently, <i>${window.timeStatus}</i>. Other schemes are: <i>${window.colorOptionsArray[0]}</i>, <i>${window.colorOptionsArray[2]}</i>, and <i>${window.colorOptionsArray[1]}</i>.
+            <br>
+            <br> The data used to choose the color scheme is determined from the IP address used to access this webpage, by calculating the current user's latitude, longitude, and time of day in milliseconds.<br>
+            <br> Both typefaces, and the autonomous drawing both do not contain any curved lines, whatsoever. This website is entirely composed of straight vector lines. <br>
+            <br>
+            <hr>
+            <br>Questions, concerns, or want to work with us? <br> <a href=\"mailto:Neveen.Shlayan@cooper.edu\">Contact us!</a><br>
+            <br>
+            <hr>
+            <br>This website was designed and developed by:<br><a target=\"_blank\" href=\"https://ricc.glitch.me/\">Richard Yurewitch</a>
+            <br>
+            <br> With substantial feedback and emotional support from: 
+            <br> <a target=\"_blank\" href=\"http://faculty.cooper.edu/mili/\">Mili Shah</a>
+            <br>
+            <br>
+            <hr>
+            <br><a target=\"_blank\" href=\"https://velvetyne.fr/\">Velvetyne Type Foundry</a> font credits and sources:
+            <br>Logo: <a target=\"_blank\" href=\"https://velvetyne.fr/fonts/cirruscumulus/\">Cirrus Cumulus</a> (Modified) designed by <a target=\"_blank\" href=\"https://velvetyne.fr/authors/clara-sambot/\">Clara Sambot</a><br>
+            Body: <a target=\"_blank\" href=\"https://velvetyne.fr/fonts/terminal-grotesque/\">Terminal Grotesque Regular</a> designed by <a target=\"_blank\" href=\"https://velvetyne.fr/authors/raphael-bastide/\">Raphaël Bastide</a>`
+        // console.log("defined more info text!")
+            if (document.getElementsByClassName("moreInfo")[0].classList.contains("activeInfoButton2") || document.getElementsByClassName("moreInfo")[1].classList.contains("activeInfoButton2")){
+              document.getElementById('dynamictext').innerHTML = moreInfoText
+            }
+          }
+        </script>
+        <button class="activeInfoButton2 moreInfo dynamicTextButton" id="displaywindow1" onclick="document.getElementById('dynamictext').innerHTML = moreInfoText; classFix(event);">
+          More Info
+        </button> 
+      </div>
+        </div>
+      </div>
+    
+      <div id="container2">
+          <div id="scroll-target">
+          </div>
+      <div class="infobuttons2">
+
+        <script>
+        const bodyTrackingCopy = `<b>Body Tracking: Vertically Integrated Project</b>
+        <br>
+        <br>
+        <br>
+        <b>Advisors (and respective Department):</b><br>Mili Shah (Math)<br>
+        <br>
+        <b>VIP Course Section Number:</b><br>A<br>
+        <br>
+        <b>Website:</b> <a href=\"http://faculty.cooper.edu/mili/miliLab/\">http://faculty.cooper.edu/mili/miliLab/</a><br>
+        <br>
+        <b>Goals:</b><br>We aim to build, evaluate and search for applications for a variety of body tracking algorithms. These algorithms use different sensor systems, including motion tracking, Microsoft Kinects and webcams that track bodies and return positional joint data.  The applications include interdisciplinary projects from Architecture, Art, and Engineering.<br>
+        <br>
+        <b>Issues Involved or Addressed:</b><br>We are interested in creating metrics and methodologies to evaluate different body tracking algorithms including those that are used in healthcare and manufacturing, as well as creating interdisciplinary projects from architecture, art, and engineering.<br>
+        <br>
+        <b>Subteams:</b><ul><li>Annotations and Algorithms</li><li>Art Installations</li><li>Body Tracking Hardware Modules</li><li>Domestic Robots</li><li>Exoskeleton Evaluations</li></ul><b>Methods & Technologies:</b><br>OpenCV, Microsoft Kinects, Webcams, Motion Tracking Systems, OpenPose, C++, Python<br>
+        <br>
+        <b>Preferred Majors for this Team:</b><ul><li>All architecture, art, and engineering majors are welcome</li></ul>        <b>Preferred Interests, Preparation, Skills:</b><ul><li>Background or interest in computer vision, camera hardware, or biomechanics</li><li>Interest in building interactive installations</li><li>Completion of CS102 or ECE160</li><li>Experience with or willingness to learn C++, OpenCV, OpenPose</li></ul>      <br><b>Team Contact information:</b><br><b>Dr. Mili Shah:</b> <a href=\"mailto:mili.shah@cooper.edu\"> mili.shah@cooper.edu </a><br><b>Alexa Jakob:</b> <a href=\"mailto:jakob@cooper.edu\"> jakob@cooper.edu </a><br><b>Aaron Schmitz:</b> <a href=\"mailto:aaron.schmitz@cooper.edu\"> aaron.schmitz@cooper.edu  </a><br><b>Amaan Rahman:</b> <a href=\"mailto:amaan.rahman@cooper.edu\"> amaan.rahman@cooper.edu  </a><br><b>Richard Yurewitch:</b> <a href=\"mailto:yurewitc@cooper.edu\"> yurewitc@cooper.edu </a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = bodyTrackingCopy; classFix(event);">
+          <a href="#scroll-target">Body Tracking</a>
+        </button>
+<script>
+const CUSAPcopy = 
+        `<b>Cooper Union Sustainable Agriculture Project: Vertically Integrated Project</b><br>
+        <br>
+        <br><b>Advisors (and respective Department)</b><br>Neveen Shlayan (EE)<br>Austin Wade Smith (Arch)<br>
+        <br>
+        <b>VIP Course Section Number:</b><br>A<br>
+        <br>
+        <b>Website:</b> <a href=\"https://www.cusap.nyc\" target=\"_blank\">https://www.cusap.nyc</a><br>
+        <br>
+        <b>Goals:</b><br>Develop long-term design framework around modular agricultural systems. Facilitate growth of multiple related projects from this framework.<br>
+        <br>
+        <b>Issues Involved or Addressed:</b><br><ul><li>Food security</li><li>Autonomous food production</li><li>Smart (urban) agriculture</li><li>“Efficient” space usage</li><li>Self-sufficiency</li><li>Community development/engagement</li><li>Marketability</li><li>Sustainability</li></ul><b>Subteams:</b><br>Subteams will be divided into themes/sections, rather than specific projects. Students will not be constrained to any one team which would allow for \"cross-pollination\" of knowledge sets: –Modeling –IoT –Agriculture –Outreach/recruiting<br>
+        <br>
+        <b>Methods & Technologies:</b><br>Open source development, IoT, Iterative design process.<br>
+        <br>
+        <b>Preferred Majors for this Team:</b><br>All engineering majors, art, and architecture.<br>
+        <br>
+        <b>Preferred Interests, Preparation, Skills:</b><ol><li>Background/interest in:</li><ul><li>Food agriculture, food justice, and food networks</li><li>\"Smart\" city futures</li><li>Sustainability and equity</li><li>Intersectional environmentalism</li><li>Open source IoT</li><li>Fabrication/making methods</li><li>Interdisciplinarity</li></ul><br>  <li>Experience with or willingness to learn:</li><ul><li>Working in a team</li><li>Clear communication skills</li><li>Project development & organization</li><li>Multiple plant growth methods, in both hydroponic & soil-based realms</li><li>Microcontroller & sensing network I/O</li><li>Modeling methods</li><li>Assembly/hand tool methods</li><li>Management and collaboration software</li></ul><br><li>Completion of:</li><ul><li>EID 101 (or similar introductory design course)</li></ul></ol><b>Team Contact information:</b><br><a href=\"mailto:reid.chambers@cooper.edu\">reid.chambers@cooper.edu</a><br><a href=\"mailto:bunt@cooper.edu\">bunt@cooper.edu</a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = CUSAPcopy; classFix(event);">
+          <a href="#scroll-target">CUSAP</a>
+        </button>
+        
+        <script>
+        const dronesCopy = `<b>Drones: Vertically Integrated Project</b><br>
+        <br>
+        <br><b>Advisors (and respective Department):</b><br>Dirk Martin Luchtenburg (ME)<br>
+        <br>
+        <b>VIP Course Section Number:</b><br>A<br>
+        <br>
+        <b>Website:</b><br><a href=\"https://github.com/Cooper-Union-VIP-Drones-Team\" target=\"_blank\">https://github.com/Cooper-Union-VIP-Drones-Team</a><br>
+        <br>
+        <br><b>Goals:</b><ul>  <li>Learn about coding and/or hardware involving drones</li>  <li>Develop a motion system for drones (whether it is motion detection or pattern flight)</li>  <li>Issues Involved or Addressed</li>  <li>Potential uses of a motion system in other flying projectiles</li>  <li>The expense of owning a drone</li></ul><b>Subteams:</b><br>To be updated.<br>
+        <br>
+        <b>Methods & Technologies:</b><br>C, C++, Python, Circuitry, Raspberry pi.<br>
+        <br>
+        <b>Preferred Majors for this Team:</b><br>All engineering majors.<br>
+        <br>
+        <b>Preferred Interests, Preparation, Skills:</b><ol><li>Interest in drones.</li><li>Experience with or willingness to learn hardware (raspberry pi) or software (c, python) involving drones.</li><li>Completion of CS102/ECE160.</li></ol><b>Team Contact information:</b><br><a href=\"mailto:dirk.luchtenburg@cooper.edu\">dirk.luchtenburg@cooper.edu</a><br><a href=\"mailto:hongyu.wu@cooper.edu\">hongyu.wu@cooper.edu</a><br><a href=\"mailto:ruxi.xu@cooper.edu\">ruxi.xu@cooper.edu</a><br><a href=\"mailto:david.yang@cooper.edu\">david.yang@cooper.edu</a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = dronesCopy; classFix(event);">
+          <a href="#scroll-target">Drones</a>
+        </button>
+        
+        <script>
+        const hyperloopCopy = `<b>Cooper Union Hyperloop Team<br>
+        <br>
+        <br>Advisors (and respective Department):</b><br>Dirk Martin Luchtenburg (ME)<br>Philip Yecko (PE)<br>
+        <br>
+        <b>Website:</b> <a target=\"_blank\"href=\"https://hyperloop.cooper.edu/\">https://hyperloop.cooper.edu/ </a><br>
+        <br>
+        <b>Goals:</b><br>The Hyperloop VIP section aims to participate in an international Hyperloop related design competition that requires teams to design, build and test hyperloop related technology.<br><ul><li>Hyperloop is a vehicle that travels through a vacuum tube which allows the vehicle to move at high speeds.</li> <li>The design competitions require teams to bring their vehicle to a test track and perform a full speed run down the track.</li>   <li>Previous competition goals were to make the fastest vehicle, but there is no guarantee that will be the goal each year.</li> <li>Teams are judged based off of an in-depth rubric based off of design, innovation, feasibility and a few other parameters.</li></ul><br>
+        <br>
+        <b>Issues Involved or Addressed:</b><br><ul><li>High speed travel</li><li>Reduced emissions</li> <li>Transportation</li> <li>Electronics</li><li>Mechanical design</li> <li>Coding</li> <li>Simulations</li> <li>Team management</li> <li>Long term planning</li> <li>Purchasing</li><li>Manufacturing</li><li>CAD design</li> <li>Sponsorship and outreach</li></ul><br><b>Subteams:</b><ul><li>Suspension</li> <li>Communication and controls systems</li> <li>Brakes</li> <li>Sponsorship</li><li>Propulsion and Power handling</li></ul><b><br>Methods &amp Technologies:</b><br>Onshape, Solidworks, FEA, C, C++, Python, Circuitry, Dynamics, Vibrational Analysis, PCB creation, Machine shop<br>
+        <br>
+        <b>Preferred Majors for this Team:</b><br>All majors welcome (engineering and non-engineering).<br>
+        <br>
+        <b>Preferred Interests, Preparation, Skills:</b><ol><li>Interest in transportation</li> <li>Willingness to learn </li><li>Basic CAD experience</li></ol><br><b>Team Contact information:</b><br><a href=\"mailto:thecooperhyperloop@gmail.com\">thecooperhyperloop@gmail.com</a><br><a href=\"mailto:shersher@cooper.edu\">shersher@cooper.edu</a><br>  <a href=\"mailto:dirk.luchtenburg@cooper.edu\">dirk.luchtenburg@cooper.edu</a><br><a href=\"mailto:philip.yecko@cooper.edu\">philip.yecko@cooper.edu</a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = hyperloopCopy; classFix(event);">
+          <a href="#scroll-target">Hyperloop</a>
+        </button>
+        
+        <script>
+        const IGVC = `<b>Intelligent Ground Vehicle Competition: Vertically Integrated Project</b><br>
+        <br>
+        <br><b>Advisors (and respective Department):</b><br>Neveen Shlayan (EE)<br>
+        <br>
+        <b>VIP Course Section Number:</b><br>A<br>
+        <br>
+        <b>Website:</b><br><a href=\"https://autonomylab.nyc\">https://autonomylab.nyc</a><br>
+        <br>
+        <b>Goals:</b><br>Compete in the IGVC event and conduct autonomous vehicles research at Cooper Union.<br>
+        <br>
+        <b>Issues Involved or Addressed:</b><br>Platform for continued Autonomy Lab research. Research on the fast-growing field of autonomous vehicles. Research on the complex social and economic implications of autonomous vehicles.<br>
+        <br>
+        <b>Subteams:</b><br>Perception, Drive-by-wire, Controls, SLAM, Hardware.<br>
+        <br>
+        <b>Methods & Technologies:</b><br>ROS, perception/SLAM/path planning, controls, communications, safety analysis, microcontrollers, CAN bus, systems and embedded software engineering, general mechanical/electrical engineering. Strong communication skills and teamwork.<br>
+        <br>
+        <b>Preferred Majors for this Team:</b><br>Mechanical, electrical, civil, and general engineering.<br>
+        <br>
+        <b>Preferred Interests, Preparation, Skills:</b><ol>  <li>Background/interest in autonomous vehicles and fast-moving team dynamics.</li>  <li>Experience with or willingness to learn ROS, perception/SLAM/path planning, controls, communications, safety analysis, microcontrollers, CAN bus, systems and embedded software engineering, Git, general mechanical/electrical engineering.</li>  <li>No prerequisite courses required, but AI/ML/etc are helpful for the technical team.</li></ol><b>Team Contact information:</b><br><a href=\"mailto:daniel.mezhiborsky@cooper.edu\">daniel.mezhiborsky@cooper.edu</a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = IGVC; classFix(event);">
+          <a href="#scroll-target">IGVC</a>
+        </button>
+        
+        <script>
+        const smartCitiesCopy = `<b>Smart Cities: Vertically Integrated Project</b><br>
+        <br>
+        <br><b>Advisors:</b><br>Neveen Shlayan (EE)<br>Mili Shah (Math) <br>Dirk Luchtenburg (ME)<br>
+        <br>
+        <b>VIP Course Section Number:</b><br>A<br>
+        <br>
+        <b>Research:</b><br>The Autonomy of “Smart” Cities is a cross-disciplinary course that is dedicated to finding technology-based solutions to some of the most pressing issues that are currently facing our cities.<br> This course will focus on closed-loop systems in order to explore a more sustainable transportation, energy, and urban agricultural structures that promote the autonomy of our communities and enhance the livability of our cities.<br>
+        <br>
+        Students will be expected to develop complete solutions (design and implementation) integrating ideas and concepts from different disciplines such as:<br><ul><li>Design</li><li>ML</li><li>Robotics</li><li>IoT</li><li>Hardware design</li><li>Vision</li><li>Lighting</li><li>Control theory</li></ul><br>
+        <br>
+        <b>Example Projects:</b><ul><li><b>Self-Drive:</b> an autonomous vehicle project</li><li><b>Net-Zero-Surrey:</b> designing a sustainable transportation solution for more livable future cities</li><li><b>Urban Agriculture:</b> enabling the urban community to produce their own food</li><li><b>Robotics Arms:</b> modeling human motion with robotics arms</li><li><b>Drones:</b> sling load and cooperative drones</li></ul>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = smartCitiesCopy; classFix(event);">
+          <a href="#scroll-target">Smart Cities</a>
+        </button>
+        
+        <script>
+        const bioArtLabCopy = `<b>BioArt Lab: An Extension of CUSAP</b><br>
+        <br>
+        <br><b>Advisors (and respective Department)</b><br>Neveen Shlayan (EE)<br>Austin Wade Smith (Arch)<br>
+        <br>
+        <b>Website:</b> <a href="https://www.cusap.nyc" target="_blank">-COMING SOON-</a><br>
+        <br>
+        <b>Goals:</b><br>
+        We seek to extend the conversation on sustainability to the arts. This project is integrated with sustainable agriculture to show the interdependence of systems and disprove the autonomy of the arts. 
+        <br>
+        <br>
+        <b>Issues Involved or Addressed:</b>
+        <ul>
+          <li>Wastefulness in the arts </li>
+          <li>Sustainability</li>
+          <li>Renewable modes of production</li>
+        </ul>
+
+        <b>Methods & Technologies:</b>
+        <ul>
+          <li>Use of mycelium</li>
+          <li>SCOBY</li>
+          <li>Bioluminescent bacteria for use as artistic mediums</li>
+          <li>Use of plant matter for natural dye production</li>
+          <li>Composting</li>
+        </ul>
+
+        <br><b>Preferred Majors for this Team:</b><br>Artists and art students and people working with conventional arts practices within the art market. Also anyone interested in changing their relationship to materiality is welcome as well.<br>
+        <br>
+
+
+        <b>Team Contact information:</b><br><a href="mailto:dalilabo@gmail.com">dalilabo@gmail.com</a>`
+        </script>
+        
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = bioArtLabCopy; classFix(event);">
+          <a href="#scroll-target">BioArt Lab</a>
+        </button>
+
+        <button class="dynamicTextButton displaymobile " onclick="document.getElementById('dynamictext').innerHTML = newsText; classFix(event);">
+          <a class="" href="#scroll-target">News</a>
+        </button> 
+        
+        <button class="dynamicTextButton  displaymobile" onclick="document.getElementById('dynamictext').innerHTML = outreachText; classFix(event);">
+          <a class="" href="#scroll-target">Outreach</a>
+        </button>
+        
+        <button class="activeInfoButton2 moreInfo dynamicTextButton displaymobile" onclick="document.getElementById('dynamictext').innerHTML = moreInfoText; classFix(event);">
+          <a class="activeInfoButton2" href="#scroll-target">More Info</a>
+        </button> 
+        
+        
+<!--         <script>
+        const bioArtLab2Copy = `<b>BioArt Lab: An Extension of CUSAP</b><br>
+        <br>
+        <br><b>Advisors (and respective Department)</b><br>Neveen Shlayan (EE)<br>Austin Wade Smith (Arch)<br>
+        <br>
+        <b>Website:</b> <a href="https://www.cusap.nyc" target="_blank">-COMING SOON-</a><br>
+        <br>
+        <b>Goals:</b><br>
+        We seek to extend the conversation on sustainability to the arts. This project is integrated with sustainable agriculture to show the interdependence of systems and disprove the autonomy of the arts. 
+        <br>
+        <br>
+
+
+        <b>Issues Involved or Addressed:</b>
+        <ul>
+          <li>Wastefulness in the arts </li>
+          <li>Sustainability</li>
+          <li>Renewable modes of production</li>
+        </ul>
+
+        <b>Methods & Technologies:</b>
+        <ul>
+          <li>Use of mycelium</li>
+          <li>SCOBY</li>
+          <li>Bioluminescent bacteria for use as artistic mediums</li>
+          <li>Use of plant matter for natural dye production</li>
+          <li>Composting</li>
+        </ul>
+
+        <br><b>Preferred Majors for this Team:</b><br>Artists and art students and people working with conventional arts practices within the art market. Also anyone interested in changing their relationship to materiality is welcome as well.<br>
+        <br>
+
+
+        <b>Team Contact information:</b><br><a href="mailto:dalilabo@gmail.com">dalilabo@gmail.com</a>`
+        </script>
+        <button class="dynamicTextButton" onclick="document.getElementById('dynamictext').innerHTML = bioArtLab2Copy; classFix(event);">
+          <a href="#scroll-target">BioArt Lab 2</a>
+        </button> -->
+        
+        
+<!-- THE ABOVE is CUSAP/BioArt Lab copy, you can look at the page in test-buttons/CUSAP or test-buttons/BioArt Lab to see it. The code can be over multiple lines, it's okay to copy and paste it as it's written in another html document, as long as it's in backticks (`) so it's part of a template literal, it'll display properly. ALSO: Link display, href="" quotation marks <b>do not</b> need to be escaped when in a template literal.  -->
+      </div>
+        
+        
+        <div id="dynamictext">
+        </div>
+        
+        
+       <script>
+        document.getElementById("dynamictext").innerHTML = moreInfoText
+    
+  
+      </script>
+      </div>
+      
+  </body>
+</html>

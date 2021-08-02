@@ -1,0 +1,1022 @@
+@font-face {
+  font-family: 'TerminalGrotesque';
+  src: url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.eot?v=1624502153224'); /* IE9 Compat Modes */
+  src: url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.eot?v=1624502153224') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.woff2?v=1624502033670') format('woff2'), /* Super Modern Browsers */
+       url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.woff?v=1624502153266') format('woff'), /* Pretty Modern Browsers */
+       url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.ttf?v=1624502170559')  format('truetype'), /* Safari, Android, iOS */
+       url('https://cdn.glitch.com/5f97e950-5a7a-4477-b953-b147a9bfa2c6%2Fterminal-grotesque-webfont.svg?v=1624502153224') format('svg'); /* Legacy iOS */
+
+  
+}
+
+
+:root {
+/*   --accent-color: #808080; */
+/*   --background-color: #808080; */
+  --news-filter: contrast(0) grayscale(1);
+  --document-fade: opacity 1s linear;
+}
+
+html, body{
+  overflow:hidden;
+  margin:0px;
+  width:100%;
+  height:100%;
+/*   transition: background-color 0.5s linear; */
+  transition: var(--document-fade);
+}
+
+body{
+  user-select: none;
+  display: flex;
+/*   position: absolute; */
+/*   height: 100vh; */
+/*   width: 100vw; */
+  top: 0;
+  transition: var(--document-fade);
+/*   opacity: 0; */
+}
+
+#Layer_1{
+/*   fill: fill: var(--accent-color); */
+  fill: var(--accent-color);
+/*   transition: fill 0.5s linear; */
+  margin-bottom: 20px;
+}
+
+#animation{
+  transition: var(--document-fade);
+  fill: var(--accent-color);
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:999;
+  background-color: var(--background-color);
+}
+
+#animation g{
+  transition:  var(--document-fade);
+}
+
+#animation path{
+  transition: var(--document-fade);
+}
+
+#animation polygon{
+  transition: var(--document-fade);
+}
+
+#animation line{
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+  transition: var(--document-fade);
+}
+
+.st11{
+  transition: var(--document-fade);
+}
+        
+
+#container{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top:0px;
+  left:0px;
+/*       border: 2px solid var(--accent-color); */
+    color: var(--accent-color);
+    font-family: 'TerminalGrotesque';
+}
+
+#canvascontainer{
+  display: flex;
+  justify-content: flex-end;
+  height: 200px;
+  width: calc( 30vw + 120px );
+  margin-left: 40px;
+}
+
+#canvascontainer canvas{
+  position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: calc( 30vw - 324px );
+    border: 2px solid var(--accent-color);
+}
+
+#Layer_1{
+    position: absolute;
+    transition: var(--document-fade);
+    opacity: 0;
+    width: auto;
+    /* width: 350px; */
+    height: 10vh;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.parentparent{
+  user-select: none;
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  transition: var(--document-fade);
+  opacity: 0;
+}
+
+#container2{
+    height: calc( 100vh - 280px );
+        width: calc( 70vw - 250px );
+    padding: 0px;
+/*     background-color: gainsboro; */
+/*     border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: 'TerminalGrotesque'; */
+/*     margin-top: 200px; */
+  margin-top: calc( 10vh + 80px );
+    margin-left: 40px;
+}
+
+.bodycopyandbuttonsanddrawing{
+  width: fit-content;
+      height: calc( 100vh - 250px );
+  margin-top: calc( 10vh + 80px );
+/*   margin-top: 200px; */
+/*   display: flex; */
+}
+
+
+.bodycopymain{
+    user-select: text;
+    width: 30vw;
+    font-size: 18px;
+    max-height: calc(65% - 124px);
+    overflow-y: scroll;
+    /* height: 40vh; */
+/*     position: absolute; */
+/*     margin-top: 200px; */
+    top: 0px;
+    margin-left: 40px;
+    padding: 60px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: 'TerminalGrotesque';
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.bodycopymain::selection {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+.infobuttons{
+    border: 2px solid var(--accent-color);
+    color: var(--background-color);
+    font-family: 'TerminalGrotesque';
+    width: 120px;
+    height: 120px;
+    padding: 40px;
+    /* margin-right: 0px; */
+    /* right: 0px; */
+    position: relative;
+    margin-left: calc( 40px );
+   
+}
+
+.infobuttons button{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  font-family: 'TerminalGrotesque';
+  font-size: 18px;
+  margin-bottom: 5px;
+  transition: none;
+}
+
+
+.infobuttons2{
+  margin-bottom: 40px;
+}
+
+.dynamicTextButton{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  font-family: 'TerminalGrotesque';
+  font-size: 18px;
+  margin-bottom: 5px;
+  transition: none;
+}
+
+.dynamicTextButton2{
+  
+}
+
+.dynamicTextButton:hover{
+  color: var(--background-color)!important;
+  background-color: var(--accent-color)!important;
+  cursor: pointer;
+  transition: none;
+}
+.dynamicTextButton2:hover{
+  color: var(--background-color)!important;
+  background-color: var(--accent-color)!important;
+  cursor: pointer;
+  transition: none;
+}
+
+.activeInfoButton2{
+  background-color: var(--accent-color)!important;
+  color: var(--background-color)!important;
+}
+
+
+
+#dynamictext{
+  user-select: text;
+/*   background-color: gainsboro; */
+  padding: 60px;
+  width: calc( 100% - 120px );
+      height: calc( 97% - 180px );
+      border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: 'TerminalGrotesque';
+      overflow: scroll;
+    overflow-x: hidden;
+      font-size: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  transition: var(--document-fade);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+  transition: var(--document-fade);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  transition: var(--document-fade);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+  transition: var(--document-fade);
+}
+
+        @keyframes example {
+  0%   {fill:white;}
+  25%  {fill:white;}
+  50%  {fill:white;}
+  100% {fill:black;}
+}
+
+#dynamictext::selection {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+        
+	.st0{
+    fill:none;
+    stroke:#808080;
+    stroke-width:0; 
+/*     animation-name: example; */
+/*     animation-duration: 10s; */
+/*     transition: fill 2s; */
+        }
+    
+    #animation{
+      transition: var(--document-fade);
+      fill: var(--accent-color);
+      width:100%;
+      height:100vh;
+      pointer-events:none;
+    }
+
+
+a:link {
+/*   background-color: yellow; */
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+a:visited {
+/*   background-color: cyan; */
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+a:hover {
+/*   background-color: lightgreen; */
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  text-decoration: underline;
+}
+
+a:active {
+/*   background-color: hotpink; */
+  color: var(--accent-color);
+  text-decoration: underline;
+} 
+
+
+button a:link {
+/*   background-color: yellow; */
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+button a:visited {
+/*   background-color: cyan; */
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+button a:hover {
+/*   background-color: lightgreen; */
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+button a:active {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+} 
+
+button a::selection{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+
+button:hover a:link {
+/*   background-color: yellow; */
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+button:hover a:visited {
+/*   background-color: cyan; */
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+button:hover a:hover {
+/*   background-color: lightgreen; */
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+button:hover a:active {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-decoration: none;
+} 
+
+button:hover a::selection{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+a::selection {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+b::selection {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* window styles ==================================================================================== */
+
+ .window {
+    z-index: 2;
+    border: 2px solid var(--accent-color);
+    background-color: var(--background-color);
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: translate(200px, 648px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'TerminalGrotesque';
+    font-size: 18px;
+}
+      
+      #window2 {
+        height: 205px;
+      }
+
+
+.window .window-bar {
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    cursor: move;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.window .window-bar .window-close {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: var(--background-color);
+    width: 14px;
+    height: 14px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.window-body {
+    margin: 1em;
+  font-size: 15px;
+}
+      
+      .window-bar div{
+            font-size: 15px;
+    margin-top: -1px;
+    padding-bottom: 2px;
+      }
+
+#windowscontainer{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  pointer-events: none;
+}
+
+.window{
+  pointer-events: auto;
+}
+
+
+.activeInfoButton3{
+  background-color: var(--accent-color)!important;
+  color: var(--background-color)!important;
+}
+
+  .displaymobile{
+    display: none;
+  }
+
+#scroll-target{
+  position:absolute;
+  top:0px;
+}
+
+#scroll-target2{
+  position:relative;
+  top:0px;
+}
+
+@media screen and (max-height: 900px) {
+  
+  #dynamictext{
+    height: calc( 110% - 180px );
+  }
+  
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  #canvascontainer canvas{
+width: calc(16vw + 20px)!important;
+    height: calc(16vw + 20px)!important;
+    margin-left: 0px;
+  }
+  
+  .infobuttons{
+    width: calc(12vw + 20px)!important;
+    height: calc(12vw + 20px)!important;
+    padding: 10px;
+    padding-top: 4vw;
+    padding-bottom: 0px;
+    padding-left: 4vw;
+    padding-right: 0px;
+  }
+  
+  .infobuttons button{
+    margin-bottom: 0px;
+  }
+  
+  #canvascontainer{
+        height: 200px;
+    width: calc( 30vw + 120px );
+    margin-left: 40px;
+    margin-right: 0px;
+    right: 0px;
+    display: flex;
+  }
+  
+  @media screen and (max-height: 550px) {
+
+  
+}
+
+
+@media screen and (max-width: 1238px) {
+  #dynamictext{
+               height: calc( 96% - 180px );
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  #dynamictext{
+            height: calc( 96% - 180px );
+  }
+}
+
+@media screen and (max-width: 938px) {
+  #dynamictext{
+            height: calc( 96% - 180px );
+  }
+  
+    .infobuttons{
+    width: calc(13vw + 20px)!important;
+    height: calc(13vw + 20px)!important;
+    padding: 10px;
+    padding-top: 3vw;
+    padding-bottom: 0px;
+    padding-left: 3vw;
+    padding-right: 0px;
+  }
+  
+}
+}
+
+
+
+@media screen and (max-width: 860px) {
+  #dynamictext{
+    padding: 30px;
+    height: calc( 98% - 180px );
+    width: calc( 100% - 60px );
+    font-size: 14px;
+  }
+  
+  .bodycopymain{
+    padding: 30px;
+    width: calc( 30vw + 60px );
+    max-height: calc(65% - 64px);
+    font-size: 14px;
+  }
+  
+  .infobuttons button{
+    font-size: 14px;
+  }
+  
+  .dynamicTextButton{
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width: 730px) {
+  #dynamictext{
+                height: calc( 98% - 240px );
+  }
+  
+      .infobuttons{
+    width: calc(13vw + 20px)!important;
+    height: calc(13vw + 20px)!important;
+    padding: 10px;
+    padding-top: 3vw;
+    padding-bottom: 0px;
+    padding-left: 3vw;
+    padding-right: 0px;
+  }
+  
+  .infobuttons button{
+    margin-bottom: -3px;
+    margin-top: -3px;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  #dynamictext{
+                    height: calc( 98% - 260px );
+  }
+}
+
+@media screen and (max-width: 626px) {
+  #dynamictext{
+                   height: calc( 98% - 292px );
+  }
+}
+
+@media screen and (max-height: 700px) {
+    
+  #Layer_1{
+    height: 18vh;
+/*     margin-top: 18px; */
+/*     margin-left: 40px; */
+  }
+  
+  .dynamicTextButton {
+    font-size: 14px;
+}
+  
+  .infobuttons button{
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    font-family: 'TerminalGrotesque';
+    font-size: 14px;
+    margin-bottom: -3px;
+    margin-top: -5px;
+    align-items: normal;
+    white-space: nowrap;
+  }
+  
+  .bodycopyandbuttonsanddrawing{
+        margin-top: calc( 25vh + 40px );
+  }
+  
+  #container2{
+     margin-top: calc( 25vh + 40px );
+  }
+  
+  #canvascontainer canvas{
+    width: 20vh!important;
+    height: 20vh!important;
+  }
+  
+  #canvascontainer{
+        justify-content: flex-end;
+  }
+  
+  #dynamictext{
+    height: calc( 105% - 120px );
+    min-height: 60%;
+    font-size: 14px;
+    padding: 30px;
+  }
+  
+  .bodycopymain{
+    padding: 30px;
+    font-size: 14px;
+    width: calc( 30vw + 60px );
+    max-height: calc(65% - 64px);
+    
+  }
+  
+  .infobuttons{
+    width: calc(15vh)!important;
+    height: calc(15vh)!important;
+    /* padding: 30px; */
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 3vh;
+    padding-right: 2vh;
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1238px) {
+  #dynamictext{
+    height: calc( 105% - 93px );
+    min-height: 43%;
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  #dynamictext{
+    height: calc( 104% - 116px );
+    min-height: 43%;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  #dynamictext{
+    height: calc( 110% - 138px );
+    min-height: 21%;
+  }
+  
+  .infobuttons button{
+    width: fit-content;
+    margin-top: -7px;
+    margin-bottom: -23px;
+    margin-left: -4px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #dynamictext{
+    height: calc( 110% - 123px);
+    min-height: 32%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #dynamictext{
+    height: calc( 110% - 123px);
+    min-height: 32%;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  #dynamictext{
+    height: calc( 110% - 138px);
+    min-height: 19%;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  #dynamictext{
+height: calc( 104% - 141px );
+    min-height: 8%;
+  }
+}
+  
+  
+}
+
+@media screen and (max-height: 600px) {
+    .infobuttons{
+    width: calc(15vh)!important;
+    height: calc(15vh)!important;
+    /* padding: 30px; */
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 3vh;
+    padding-right: 2vh;
+  }
+  
+  .infobuttons button{
+    margin-top: -5px;
+    margin-bottom: -3px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+    .infobuttons{
+    width: calc(14vh)!important;
+    height: calc(15vh)!important;
+    /* padding: 30px; */
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .infobuttons button{
+    width: fit-content;
+/*     margin-top: -6px; */
+    margin-bottom: -23px;
+    margin-left: -1px;
+  }
+  
+  @media screen and (max-height: 400px){
+    .infobuttons button {
+width: fit-content; */
+    margin-top: -9px;
+    /* margin-bottom: -23px; */
+    margin-left: -6px;
+}
+    
+  }
+  
+  
+}
+
+
+.newsimage{
+  width: 80%;
+  height: auto;
+  filter: var(--news-filter);
+  z-index: -1;
+}
+
+hr{
+  border-color: var(--accent-color);
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  #animation{
+    margin-top: -5vh;
+    padding-bottom: 5vh;
+    background-color: var(--background-color);
+  }
+  
+  
+  .bodycopymain{
+    font-size:18px;
+  }
+  
+  #dynamictext{
+    font-size: 18px;
+  }
+  
+    .dynamicTextButton {
+    font-size: 18px;
+}
+  
+  .infobuttons button{
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    font-family: 'TerminalGrotesque';
+    font-size: 18px;
+    margin-bottom: -3px;
+    margin-top: -5px;
+    align-items: normal;
+    white-space: nowrap;
+  }
+  
+  .newsimage{
+    width: 100%;
+  }
+  
+  .bodycopymain{
+    max-height: unset;
+    height: unset;
+  }
+  
+  #scroll-target{
+  position:relative;
+  top:unset;
+}
+  
+  body{
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  article {
+    padding: 1rem 3rem;
+  }
+  
+  .parentparent{
+    overflow:scroll;
+    overflow-x: hidden;
+    display: block;
+    position: relative;
+    height: fit-content;
+    margin-top: 20px;
+  }
+  
+  .bodycopymain{
+    padding:30px;
+    width: calc(80vw - 60px);
+    margin-left: calc( 10vw - 4px);
+  }
+  
+  #canvascontainer{
+    display: block;
+    margin-left:0px;
+    /* display: flex; */
+    height: fit-content;
+    width: calc( 30vw + 120px );
+    /* margin-left: 40px; */
+  }
+  
+  #canvascontainer canvas {
+    position: relative;
+    display: block;
+    width: calc(80vw)!important;
+    height: calc(80vw)!important;
+    margin-left: calc( 0vw - 0px );
+    border: 2px solid var(--accent-color);
+    margin-left: calc( 10vw - 4px);
+  }
+  
+  .bodycopyandbuttonsanddrawing {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 0px;
+    /* display: flex; */
+}
+  
+  #container2{
+    margin-top:0px;
+    margin-left: 0px;
+    padding-left: calc( 10vw - 4px);
+    padding-color: var(--background-color);
+    height: fit-content;
+  }
+  
+  #Layer_1{
+    position: relative;
+    transition: var(--document-fade);
+/*     opacity: 0; */
+    width: 80vw;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 10vw;
+  }
+  
+  .infobuttons{
+  margin-left: calc( 10vw - 4px);
+  margin-top: 20px;
+    display: block;
+    padding: 0px;
+    width: 80vw;
+    height: auto;
+    border: 0px;
+    display:none;
+  }
+  
+  .infobuttonspace{
+    display: none;
+  }
+  
+  #dynamictext{
+    padding:30px;
+    width: calc(80vw - 60px);
+    height: fit-content;
+    margin-bottom: 45px;
+    margin-top: -22px;
+    min-height: calc( 100vh - 240px );
+  }
+  
+  .bodycopymain{
+    margin-bottom: 20px;
+  }
+  
+/*   .infobuttons2container{
+    height: fit-content;
+  } */
+  
+  .infobuttons2{
+    width: calc(80vw);
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* padding-right: 5vw; */
+    padding-left: 3px;
+    padding-right: 2px;
+    margin-left: -0.4px;
+    padding-color: var(--background-color);
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    border-bottom: 2px solid var(--accent-color);
+      z-index: 1;
+  }
+  
+  .displaymobile{
+        display: inline-block;
+  }
+  
+  body{
+  user-select: none;
+  display: block;
+/*   position: absolute; */
+/*   height: 100vh; */
+/*   width: 100vw; */
+  top: 0;
+  transition: var(--document-fade);
+/*   opacity: 0; */
+}
+  
+}
+
